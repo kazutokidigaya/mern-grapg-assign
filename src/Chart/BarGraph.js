@@ -22,7 +22,6 @@ const BarGraph = () => {
   useEffect(() => {
     axios.get(url).then((response) => {
       setChart(response.data);
-      console.log(response);
     });
   }, [url]);
 
